@@ -1,0 +1,24 @@
+[
+    {
+        "name": "JavaScript Map",
+        "description": "The project 'Map and apartments' was finished after 3 months of work on it. The purpose of this application is a locator of accommodation for rent or sale/purchase. It visually consists of two parts: the map and the control sidebar. The control sidebar part contains all the basic data about the accommodation, which is available for the review. There are also filters for a quick and user-friendly search for apartments. Additionally, you can add new ads on the application by filling out forms and sending them to the server. Owing to the connected real map you can see the location of the apartments. I created it using two versions: the first one - using Google Maps API, this documentation is not complicated, contains many methods and is easy to read; the second one - was created with Leaflet documentation. It has not only all the same methods as Google Maps Api, but also its own additional ones. This documentation gives a detailed description of the all steps and provides options for different visual maps.",
+        "theses": ["JavaScript - a language for implementing the main part of the project, namely for its logic. I learned to build logic correctly and use many methods, write my own synchronous/asynchronous functions, work with different types of data", "Used Fetch to receive a request from the server. Worked with JSON data format in which manipulation occurs through queries and most often in building REST API", "Used OOP (object-oriented programming) for the correct construction of the application architecture. Learned to build a hierarchy in the form of objects, each of which is an instance of a particular class, and the class, accordingly, creates an inheritance hierarchy", "CSS3/SCSS - for styling HTML layout. I learned to use the basic properties of this language - Flex and Grid", "BEM principal - methodology for writing styles. Learned to keep the order in styles", "HTML5 - used to create the framework of the site", "Webpack - used as a project compiler. Created my own configuration for the project", "NPM - used to install the necessary packages for the project", "Used Git to control the versioning of the project. I can properly build a hierarchy of branches and work with them"],
+        "linkGitHub": "https://github.com/flausdr/javascript-map/",
+        "linkPreview": "https://flausdr.github.io/javascript-map/",
+        "dateStart": "25 Jule 2022",
+        "dateFinish": "8 September 2022",
+        "previewImg": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP7gFfJ84BAmUlU5JEVab7gb3WDDBgP2lZ5bYjA40R06IcTbqOqD_EiFFx9vr90ChLr6ChOjVs14Gf2vjJjg2Igs1VyEq6xL0tPUa5lNU5PK8tMkWgsv7fjpxGajSpk25z_rC80wDG51dIIj-FqbkpOrbM_Jbxz1dVsJN95hwHWdKK_oVgl-KClwAAsA/s1281/map-project.png",
+        "className": "project-left"
+    },
+    {
+        "name": "ToDo List",
+        "description": "The project 'React Desk with drag and drop' was created within two months. The main function of the application is the task management in the form of cards. The project is an analogue of Trello. There was used a feature of drag and drop - dragging cards and cards columns on the board. To implement drag and drop, I used a library Sortable that works with React components. It involves the main data management functions - CRUD (create read update delete), which are wrapped in a Redux environment.",
+        "theses": ["JavaScript - the main language of the project. I used Map object in reducers for quick access to any element and its children. I converted it to an array for immutable state and returned it back to the Map object. Also I improved my knowledge of using Spread and Rest operators in practice", "React - JavaScript library for creating a user interface. I learned how to build a structure of the application from components, to create logic, used auxiliary hooks to work with state data", "Redux Toolkit - used it to configure the storage and perform operations. It allows you to simplify and optimize the code too. I learned how to process the initial state and use the functions of reducers", "CSS3/SCSS - it is necessary to style the project. Used Flex to create flexible and complex blocks", "BEM principal - is a methodology for writing styles", "NPM - used for installation of React-Redux packages and additional required packages", "Git - control versioning system"],
+        "linkGitHub": "https://github.com/flausdr/my-todo-list/",
+        "linkPreview": "https://flausdr.github.io/my-todo-list/",
+        "dateStart": "9 October 2022",
+        "dateFinish": "25 December 2022",
+        "previewImg": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgs9DNg_sYbPZNYIojncdqtshneEawoZNsZjHuQfpuKbuTSlupmutQmLtQh-jN3Q7rQ2Vzlybzb613c9IusEaXuH2qa1zuvL7F6HzInUfi94jQ9_04Ba6_cGMq0oZ_N4eXbOVun0F94QO8v9M26ytpXehvQKpszqCxYddxtrzAapxsdwpmFdalhp2VPJw/s1281/todolist.png",
+        "className": "project-right"
+    }
+]

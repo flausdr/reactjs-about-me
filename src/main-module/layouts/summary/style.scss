@@ -1,0 +1,31 @@
+.summary{
+    &__text{
+        font-size: 18px;
+        text-align: justify;
+        text-indent: 1.2rem;
+    }
+    &__img{
+        max-height: 450px;
+    }
+}
+
+.project{
+    &__text{
+        font-size: 18px;
+        text-indent: 1.2rem;
+    }
+}
+
+.blur{
+    filter: brightness(0.6) blur(1.2px);
+    transition: filter linear 0.7s;
+    &:hover{
+        filter: brightness(1) blur(0);
+        transition: filter linear 0.7s;
+    }
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
