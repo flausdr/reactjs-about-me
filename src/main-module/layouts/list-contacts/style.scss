@@ -1,0 +1,33 @@
+.trash{
+    cursor: pointer;
+    transition: 0.25s linear all;
+    &:hover{
+        fill: #FF0000;
+        transform: scale(1.1);
+        transition: 0.25s linear all;
+    }
+}
+
+.pencil{
+    fill: #d3d3d3;
+    cursor: pointer;
+    transition: 0.25s linear all;
+    &:hover{
+        fill: #000000;
+        transition: 0.25s linear all;
+    }
+}
+
+.btn{
+    &:hover{
+        color: #fff !important;
+    }
+}
+
+.name,
+.phone{
+    &:focus{
+        border: none;
+        outline: none;
+    }
+}
