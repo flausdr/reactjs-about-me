@@ -1,0 +1,66 @@
+@import '../../../variable.scss';
+
+.span-mail{
+    cursor: pointer;
+    color: #000;
+    transition: 0.35s linear all;
+    &:hover{
+        color: #fff;
+        .mail{
+            fill: #fff;
+            transition: 0.35s linear all;
+        }
+    }
+}
+
+.span-clear{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.35s linear all;
+    &:hover{
+        opacity: 1;
+        transition: 0.35s linear all;
+    }
+}
+
+.popup{
+    position: fixed;
+    z-index: 2;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-50%);
+    background-color: $white-bg-popup;
+}
+
+.textarea-form{
+    resize: none;
+    z-index: 1;
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.search-block{
+    position: relative;
+}
+
+.list-numbers{
+    position: absolute;
+    top: 40px;
+    max-height: 120px;
+    height: auto;
+    overflow-y: scroll;
+    z-index: 2;
+    > span{
+        cursor: pointer;
+        &:hover{
+            background-color: #c9c9c9;
+        }
+    }
+}

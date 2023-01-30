@@ -1,7 +1,9 @@
 .trash{
     cursor: pointer;
+    opacity: 0.5;
     transition: 0.25s linear all;
     &:hover{
+        opacity: 1;
         fill: #FF0000;
         transform: scale(1.1);
         transition: 0.25s linear all;

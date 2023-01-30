@@ -7,7 +7,7 @@ const Profile = () => {
         <Container className="container text-center my-5">
             <Row>
                 <Col>
-                    <p className="display-4 font-weight-lighter">About me</p>
+                    <h2 className='text-center m-5 font-weight-lighter'>About me</h2>
                 </Col>
             </Row>
             <Row className="align-items-center my-3 summary__text font-weight-light">

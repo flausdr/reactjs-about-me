@@ -24,7 +24,7 @@ const Contact = () => {
         return <li className="list-group-item m-2 d-flex align-items-center justify-content-between" key={contact.id}>
                 <span className='d-flex flex-column w-auto align-items-center span'>
                     <span className='d-flex align-items-center'>
-                        <p className="d-flex align-items-center font-weight-light h4 px-2 my-2 name" 
+                        <p className="d-flex align-items-center font-weight-light h4 px-2 my-2 name border-bottom py-1 px-4" 
                         contentEditable="false"
                         suppressContentEditableWarning={true}
                         onKeyDown={(e) => {

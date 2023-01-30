@@ -14,7 +14,8 @@ const ContactAdd = () => {
                 const obj = {
                     name: inputName.value,
                     phone: inputPhone.value,
-                    id: nanoid()
+                    id: nanoid(),
+                    messages: []
                 }
                 dispatch(addContact(obj))
             }
