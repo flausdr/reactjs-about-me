@@ -7,7 +7,7 @@ git clone https://github.com/flausdr/reactjs-about-me.git
 
 **Live Preview** [https://flausdr.github.io/reactjs-about-me/](https://flausdr.github.io/reactjs-about-me/)
 
-##Завдання
+## Завдання
 
 Розробити адаптивний сайт, зверстаний на bootstrap 4, який повинен складатися з 4-х сторінок:
 - сторінка "Про себе" - на цій сторінці потрібно розмістити інформацію про себе, та приклади своїх робіт;
