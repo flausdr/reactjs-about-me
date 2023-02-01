@@ -1,4 +1,4 @@
-#React with redux application "About me"
+# React with redux application "About me"
 
 **Clone**
 ```
