@@ -1,4 +1,4 @@
-import Contact from '../contact';
+import Contacts from '../contacts';
 import ContactAdd from '../contact-add';
 
 import './style.scss';
@@ -9,7 +9,7 @@ const ListUsers = () => {
             <h2 className='text-center m-5 font-weight-lighter'>Contacts</h2>
             <ContactAdd />
             <ul className="list-group my-5 list-group-flush w-75 mx-auto">      
-                <Contact />          
+                <Contacts />          
             </ul>
         </div>
     )
