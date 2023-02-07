@@ -1,27 +1,20 @@
 import { useDispatch } from "react-redux";
-import { useState, useRef, useEffect } from "react";
+import useFocusInsideContentEditable from "../../../hooks/focus";
 
 import { ReactComponent as Pencil } from '../../../assets/pencil.svg';
 import { editContact } from '../../../model/contactsSlice';
 
 const Field = ({ contact }) => {
-    const dispatch = useDispatch(),
-        [contentEdit, setContentEdit] = useState(false),
-        contentEditableRef = useRef(null);
+    const dispatch = useDispatch();
 
-    useEffect(() => {
-        const range = document.createRange(),
-            selection = window.getSelection();
-        range.selectNodeContents(contentEditableRef.current);
-        range.collapse(false);
-        selection.removeAllRanges();
-        selection.addRange(range);
-        contentEditableRef.current.focus();
-    }, [contentEdit]);
+    const [contentEdit, contentEditableRef, {
+        setContentFalse,
+        setContentToggle,
+    }] = useFocusInsideContentEditable(false);
 
     return (
         <span className='d-flex align-items-center'>
-            <p className="d-flex align-items-center font-weight-light h4 px-2 my-2 name py-1 px-4"
+            <p className="d-flex align-items-center test font-weight-light h4 px-2 my-2 name py-1 px-4"
             style={{border: contentEdit ? "1px solid #929292" : "none"}}
             contentEditable={contentEdit}
             suppressContentEditableWarning={true}
@@ -32,10 +25,18 @@ const Field = ({ contact }) => {
                     phone: contact.value === "phone" ? e.target.innerText : contact.contact.phone,
                     id: contact.contact.id
                 }
-                return e.code === 'Enter' ? dispatch(editContact(obj)) && setContentEdit(false) : null 
+                if (e.target.innerText.length <= 3 && e.code === 'Enter') {
+                    e.target.innerText = contact.value === "name" ? contact.contact.name : contact.contact.phone;
+                    setContentToggle()
+                } else if (e.code === 'Enter' && e.target.innerText.length >= 4) {
+                    return e.code === 'Enter' ? dispatch(editContact(obj)) && setContentFalse() : null;
+                }
             }}>{contact.value === "name" ? contact.contact.name : contact.contact.phone}</p>
             <Pencil width="18px" height="18px" className="pencil mx-4" onClick={(e) => {
-                setContentEdit(!contentEdit);
+                if (e.currentTarget.parentElement.firstChild.innerText.length <= 3) {
+                    e.currentTarget.parentElement.firstChild.innerText = contact.value === "name" ? contact.contact.name : contact.contact.phone;
+                }
+                setContentToggle();
             }} />
         </span>
     )

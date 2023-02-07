@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+
 import { addMessage, addContact, removeAllMessages } from '../../model/contactsSlice';
 import { ValidateInputPhone } from "../../../plugins/validations";
+
 import MessageItem from '../message-item';
 import Search from './search';
 
@@ -53,7 +55,7 @@ const MessageAdd = () => {
 
                     numbers.map(el => {
                         if (el.phone !== phone.value) {
-                            newObj.name = 'undefined';
+                            newObj.name = 'User Name';
                             newObj.phone = phone.value;
                             newObj.id = nanoid();
                             newObj.messages = [obj];
