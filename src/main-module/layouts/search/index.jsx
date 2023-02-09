@@ -1,8 +1,6 @@
 import { useSelector } from "react-redux";
 import { useState, useEffect } from "react";
 
-import '../style.scss';
-
 const Search = ({ show }) => {
     const numbers = useSelector(state => state.counter),
         [isSearch, setIsSearch] = useState(false),
@@ -16,10 +14,10 @@ const Search = ({ show }) => {
         return <span className="form-control w-100" 
             key={contact.id}
             onClick={() => {
-            const inputSearch = document.querySelector('.first-input');
-            setIsSearch(false)
-            inputSearch.value = contact.phone
-        }}>{contact.phone}</span>
+                const inputSearch = document.querySelector('.first-input');
+                setIsSearch(false)
+                inputSearch.value = contact.phone
+            }}>{contact.phone}</span>
     })
 
     useEffect(() => {

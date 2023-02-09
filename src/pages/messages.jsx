@@ -1,12 +1,12 @@
 import Header from '../main-module/layouts/header';
 import Footer from '../main-module/layouts/footer';
-import MessageAdd from '../main-module/layouts/message-add';
+import Message from '../main-module/layouts/message';
 
 const Messages = () => {
     return (
         <>
             <Header />
-                <MessageAdd />
+                <Message />
             <Footer />
         </>
     )

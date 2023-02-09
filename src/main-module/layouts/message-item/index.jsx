@@ -10,7 +10,7 @@ const MessageItem = () => {
     const oldMessages = []
 
     contacts.map(({ phone, name, id, messages }) => messages.map((message) => {
-        return oldMessages.push({ date: message.date, text: <Item contact={{ phone, name, id, message}} />})
+        return oldMessages.push({ date: message.date, text: <Item contact={{ phone, name, id, message}} key={id} />})
     }))
 
     return (
